@@ -1,0 +1,106 @@
+{
+	"id": "ca3d2afe-6db6-45d7-82ae-c53ba56fc928",
+	"name": "Reservation",
+	"timestamp": "2021-01-23T12:37:32.609Z",
+	"collection_id": "5679f3a2-89ee-4f0e-974f-9cafcf5c23eb",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "06fdaf68-a0d7-47aa-aa62-a37870c0ae5e",
+			"name": "/room/reservation/v1",
+			"url": "http://localhost:8080/room/reservation/v1?checkin=2021-03-18&checkout=2021-03-19",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				43
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a578c979-e1ca-48de-ac91-4620f6560f3d",
+			"name": "create roomreservation",
+			"url": "http://localhost:8080/room/reservation/v1",
+			"time": 40,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				40
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "eb44b972-c595-4543-b056-a1eb5031017d",
+			"name": "update roomreservation",
+			"url": "http://localhost:8080/room/reservation/v1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "74b343f7-7fa7-42cf-836d-73ecf494cd19",
+			"name": "delete roomreservation",
+			"url": "http://localhost:8080/room/reservation/v1/12345",
+			"time": 9,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 103,
+	"collection": {
+		"requests": [
+			{
+				"id": "06fdaf68-a0d7-47aa-aa62-a37870c0ae5e",
+				"method": "GET"
+			},
+			{
+				"id": "a578c979-e1ca-48de-ac91-4620f6560f3d",
+				"method": "POST"
+			},
+			{
+				"id": "eb44b972-c595-4543-b056-a1eb5031017d",
+				"method": "PUT"
+			},
+			{
+				"id": "74b343f7-7fa7-42cf-836d-73ecf494cd19",
+				"method": "DELETE"
+			}
+		]
+	}
+}
