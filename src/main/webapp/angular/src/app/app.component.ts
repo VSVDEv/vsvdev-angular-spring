@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-// import { HttpClient } from '@angular/common/http';
-// import { Observable } from 'rxjs';
-// import "rxjs/add/operator/catch";
-// import "rxjs/add/operator/map";
 import { Observable, throwError } from "rxjs";
 import {
 	HttpClient,
@@ -72,7 +68,7 @@ export class AppComponent implements OnInit {
 	getAll(): Observable<Room[]> {
 		return this.http.get<Room[]>(this.baseUrl +
 			'/room/reservation/v1?checkin=2021-03-18&checkout=2021-03-19');
-		// .pipe(map(this.mapRoom));
+
 	}
 
 }
